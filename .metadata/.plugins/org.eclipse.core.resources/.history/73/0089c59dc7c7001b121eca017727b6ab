@@ -1,0 +1,31 @@
+package dayone;
+
+public class Jungle {
+
+}
+
+// abstract class - partially complete class ** Generalization
+abstract class Animal {
+	boolean isAlive; // 
+	
+	// abstract methods
+	public abstract void move(); // no body {   }
+	
+	// concrete methods
+	public void birth() {
+		this.isAlive = true;
+	}
+}
+
+// concrete class - 100% complete  ** Specialization
+// final classes cannot be extended (last leaf in the tree of inheritance)
+final class Lion extends Animal {
+
+	@Override
+	public void move() {
+		System.out.println("Running");
+	}  
+	
+}
+
+// class A extends String {} // doesn't compile

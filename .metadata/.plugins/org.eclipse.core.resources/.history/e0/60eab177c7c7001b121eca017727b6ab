@@ -1,0 +1,14 @@
+package dayone;
+
+public class Jungle {
+
+}
+
+
+// concrete class - 100% complete
+// final classes cannot be extended (last leaf in the tree of inheritance)
+final class Lion {  
+
+}
+
+// class A extends String {} // doesn't compile

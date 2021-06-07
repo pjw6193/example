@@ -1,0 +1,46 @@
+package dayone;
+
+public class Jungle {
+	public static void main(String[] args) {
+		Animal lion = new Lion();
+		lion.move();
+	}
+}
+
+// 100% purely-abstract (Java 8)
+interface Hunter {
+	public void hunt();
+	public void stalk();
+	public void pounce();
+}
+
+// abstract class - partially complete class ** Generalization
+abstract class Animal {
+	// instance variables
+	boolean isAlive; 
+	
+	// abstract methods
+	public abstract void move(); // no body {   }
+	
+	// concrete methods
+	public void birth() {
+		this.isAlive = true;
+	}
+	
+	public void die() {
+		this.isAlive = false;
+	}
+}
+
+// concrete class - 100% complete  ** Specialization
+// final classes cannot be extended (last leaf in the tree of inheritance)
+final class Lion extends Animal {
+
+	@Override
+	public void move() {
+		System.out.println("Running");
+	}  
+	
+}
+
+// class A extends String {} // doesn't compile
