@@ -1,0 +1,50 @@
+package dayone;
+
+import java.util.LinkedList;
+import java.util.List;
+
+public class Zoo {
+
+	// JVM -> main -> run() -> method()
+	
+	public static void main(String[] args) {
+		// array initializer
+		Mammal[] mam = { new Human(), new Human(), new Dog(), new Human() };
+		for (Mammal mammal : mam) {
+			mammal.speak();
+		}
+		
+		
+	}
+	
+}
+
+
+class Mammal {
+	// access modifier (to that class only)
+	private boolean hasHair; 
+	protected int weight; // this class, subclass (no matter of package)
+	public byte version = 1;
+	String name; // package-private/default/no modifier
+	
+	public void speak() {}
+}
+
+// Human IS-A Mammal.. 
+class Human extends Mammal {
+	@Override // annotation (meta-data)
+	public void speak() {
+		System.out.println("Human speaking");
+	}
+	
+}
+
+class Dog extends Mammal {
+	@Override
+	public void speak() {
+		System.out.println("Bark");
+	}
+}
+
+
+

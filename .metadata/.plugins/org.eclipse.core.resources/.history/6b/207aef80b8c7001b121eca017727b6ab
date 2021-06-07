@@ -1,0 +1,21 @@
+package dayone;
+
+public class Zoo {
+
+}
+
+
+class Animal {
+	// state - instance variables
+	int weight;
+	boolean hasHair;
+	
+	// behavior
+	public void run() {
+		System.out.println("Running");
+	}
+	
+}
+
+
+

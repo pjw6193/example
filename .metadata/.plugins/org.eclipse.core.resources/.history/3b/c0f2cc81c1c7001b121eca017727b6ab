@@ -1,0 +1,11 @@
+package dayone;
+
+public class Office {
+
+}
+
+class Developer {
+	String languages = {"Java", "Python", "JavaScript"};
+	
+	
+}

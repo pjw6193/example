@@ -1,0 +1,29 @@
+package dayone;
+
+public class Zoo {
+
+	// JVM -> main -> run() -> method()
+	
+	public static void main(String[] args) {
+		Human patrick = new Human();
+		patrick.speak();
+	}
+	
+}
+
+
+class Mammal {
+	private boolean hasHair;
+	String name;
+	
+	public void speak() {}
+}
+
+// Human IS-A Mammal
+class Human extends Mammal {
+	
+	
+}
+
+
+

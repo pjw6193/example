@@ -1,0 +1,33 @@
+package dayone;
+
+public class Zoo {
+
+	// JVM -> main -> run() -> method()
+	
+	public static void main(String[] args) {
+		// reference variables, loop counters, etc. -- stack 
+		Animal a = new Animal(); // heap  -- object memory
+		Animal b = new Animal();
+		a.hasHair = true;
+		
+		System.out.println(a.hasHair);
+		System.out.println(b.hasHair);
+	}
+	
+}
+
+
+class Animal {
+	// state - instance variables
+	int weight;
+	boolean hasHair;
+	
+	// behavior
+	public void run() {
+		System.out.println("Running");
+	}
+	
+}
+
+
+

@@ -1,0 +1,42 @@
+package dayone;
+
+public class Zoo {
+
+	// JVM -> main -> run() -> method()
+	
+	public static void main(String[] args) {
+		// reference variables, loop counters, etc. -- stack 
+		Animal a = new Animal(); // heap  -- object memory
+		Animal b = new Animal();
+		
+		a.b += 1;
+		System.out.println(a.b);
+	}
+	
+}
+
+
+class Animal {
+	// state - instance variables
+	int weight = 2_000_000_000;
+	boolean hasHair = true;
+	char c = 'a';
+	double d = 78.8889; // money - BigDecimal  (Long - Long) 
+	float f = 78.8889f; // money - BigDecimal 
+	long l = 1_000_000_000_000L;
+	short s = 32_000;
+	byte b = 127;
+	
+	
+	String var = new String("string"); // object
+	
+	
+	// behavior
+	public void run() {
+		System.out.println("Running");
+	}
+	
+}
+
+
+

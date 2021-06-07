@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+C:\Skillstorm\in-class-examples\.metadata\.plugins\org.eclipse.jdt.core
+1704979481.index
+805830775.index

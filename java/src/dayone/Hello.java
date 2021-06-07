@@ -1,0 +1,18 @@
+package dayone;
+
+import java.util.LinkedList;
+import java.util.List;
+
+// Ctrl+Space (suggestions/auto-complete/content assist)
+// Ctrl+Shift+F (format)
+// Ctrl+Shift+O (organize imports)
+public class Hello {
+
+	public static void main(String[] args) {
+
+		List list = new LinkedList();
+		System.out.println("Hello");
+		
+	}
+
+}
