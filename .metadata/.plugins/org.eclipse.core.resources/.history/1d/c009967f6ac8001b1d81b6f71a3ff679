@@ -15,7 +15,8 @@ package daytwo;
 public class Loops {
 
 	public static void main(String[] args) {
-		int[] array = {};
+		new Loops();
+		Loops.ifElse();
 
 	}
 
@@ -25,7 +26,7 @@ public class Loops {
 	/**
 	 * This is an example of Switch-Case
 	 */
-	public static void switchCase(int x) {
+	public static void switchCase() {
 		// char, byte, short, int, String
 		String grade = "";
 		int characterThatDeterminesYourGrade = 0;

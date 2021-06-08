@@ -1,0 +1,35 @@
+package daytwo;
+
+public class ExceptionHandling {
+	// division by zero, array index out of bounds, null pointer
+
+	public static void main(String[] args) {
+
+	}
+
+	private void tryCatch() {
+		// IOException - FileNotFoundException
+		try {
+			// code that might throw an exception
+		} catch (Exception e) {
+			// recovery procedures:
+			// connect over a network? retry every 5s, timeout 60s
+			// log..
+		}
+	}
+
+	private static void code(String str) {
+		// null check
+		if (str == null) {
+			throw new IllegalArgumentException("String cannot be null");
+		}
+	}
+
+	private int divide(int x, int y) {
+		if (y == 0) {
+			return 0;
+		}
+		return x / y;
+	}
+
+}

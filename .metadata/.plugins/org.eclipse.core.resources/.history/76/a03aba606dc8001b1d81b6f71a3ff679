@@ -1,0 +1,47 @@
+package daytwo;
+
+import java.io.IOException;
+
+public class ExceptionHandling {
+	// division by zero, array index out of bounds, null pointer
+
+	public static void main(String[] args) {
+		System.out.println("main(String[])");
+		code(null);
+		
+		System.out.println("main(String[])");
+		System.out.println("Continue on..");
+	}
+
+	private void tryCatch() {
+		// IOException - FileNotFoundException
+		try {
+			// code that might throw an exception
+		} catch (Exception e) {
+			// recovery procedures:
+			// connect over a network? retry every 5s, timeout 60s
+			// log..
+		}
+	}
+
+										// declare an exception
+	private static void code(String str) throws IOException { 
+		System.out.println("code(String)");
+		// null check
+		if (str == null) {
+			// halt execution and handle this exception
+			// throw will create an exception, and try/catch will handle that exception
+			// throw new IllegalArgumentException("String cannot be null"); // RuntimeException (unchecked exception)
+			throw new IOException(); // Exception (checked exception) 
+		}
+		System.out.println("code(String) after exception");
+	}
+
+	private int divide(int x, int y) {
+		if (y == 0) {
+			return 0;
+		}
+		return x / y;
+	}
+
+}

@@ -1,0 +1,22 @@
+package daytwo;
+
+
+public class ExceptionHandling {
+	// division by zero, array index out of bounds, null pointer
+	
+	public static void main(String[] args) {
+		String str = null;
+		code(str);
+		
+	}
+
+	private static void code(String str) {
+		// null check
+		if(str == null) {
+			throw new IllegalArgumentException("String cannot be null");
+		}
+	}
+	
+}
+
+
