@@ -15,7 +15,7 @@ public class CastingExample {
 		B b = new B();
 		// A a = (C) b; // will not compile
 		
-	}
+	} 
 	
 }
 

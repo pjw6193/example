@@ -1,0 +1,23 @@
+package daytwo;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+public class Loops {
+
+	public static void main(String[] args) {
+		// for - counter-controlled loop
+		// fixed number of iterations
+		int[] array = {6,3,5,7,9,4,1};
+		Object[] objs = {};
+		
+		// implements Iterable interface
+		for (int temp : array) {
+			System.out.println(temp);
+		}
+		
+		
+	}
+	
+}

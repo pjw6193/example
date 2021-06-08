@@ -1,0 +1,18 @@
+package daytwo;
+
+public class Loops {
+
+	public static void main(String[] args) {
+		// for - counter-controlled loop
+		// fixed number of iterations
+		int[] array = {1,2,3,4,5};
+		Object[] objs = {};
+		for(int counter = 0; counter < array.length; counter++) {
+			System.out.print(array[counter]);
+		}
+		
+		
+		
+	}
+	
+}
