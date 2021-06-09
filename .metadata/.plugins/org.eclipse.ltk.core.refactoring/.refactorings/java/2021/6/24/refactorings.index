@@ -5,3 +5,5 @@
 1623157926727	Rename local variable 'something_else'
 1623157945194	Rename local variable 'somethingElse'
 1623157950220	Rename local variable 'something_else'
+1623248322799	Rename type 'InnerClasses'
+1623248330145	Rename type 'Inner'

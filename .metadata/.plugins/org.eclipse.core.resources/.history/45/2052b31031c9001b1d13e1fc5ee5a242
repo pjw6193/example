@@ -1,0 +1,56 @@
+package daythree;
+
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class CollectionsClasses {
+
+	public static void main(String[] args) {
+		//Collection coll = new Collection(); // abstract
+		
+		// unique elements, no duplicates
+		new TreeSet();// sorted
+		new LinkedHashSet(); // ordered
+		
+		Set<Person> peeps = new HashSet(); // unordered, unsorted
+		Person one = new Person("Dan", 10);
+		Person two = new Person("Howie", 20);
+		peeps.add(one); peeps.add(two);
+		System.out.println(peeps);
+	}
+	
+}
+
+class Person{
+	
+	private String name;
+	private int height;
+	
+	public Person(String name, int height) {
+		super();
+		this.name = name;
+		this.height = height;
+	}
+
+	// implement hashCode/equals
+	@Override
+	public boolean equals(Object obj) {
+		return true;
+	}
+	
+	@Override
+	public int hashCode() {
+		// reduce the search time
+		
+		return 0;
+	}
+	
+}
+
+
+
+
+
+

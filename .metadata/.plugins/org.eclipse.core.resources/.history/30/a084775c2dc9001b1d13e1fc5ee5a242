@@ -1,0 +1,7 @@
+package daythree;
+
+public class InnerClasses {
+
+	// class within a class
+	
+}

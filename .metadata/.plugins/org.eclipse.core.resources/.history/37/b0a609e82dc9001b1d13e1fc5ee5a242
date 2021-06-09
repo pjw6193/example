@@ -1,0 +1,17 @@
+package daythree;
+
+public class OuterClass {
+	
+	public static void main(String[] args) {
+		OuterClass.InnerClass obj = new InnerClass();
+	}
+	
+	
+	// class within a class
+	class InnerClass {
+		public void run() {
+			System.out.println("Inner class running");
+		}
+	}
+	
+}

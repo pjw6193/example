@@ -1,0 +1,19 @@
+package daythree;
+
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.TreeSet;
+
+public class CollectionsClasses {
+
+	public static void main(String[] args) {
+		//Collection coll = new Collection(); // abstract
+		
+		// unique elements, no duplicates
+		new TreeSet();// sorted
+		new LinkedHashSet(); // ordered
+		new HashSet(); // unordered, unsorted
+		
+	}
+	
+}
