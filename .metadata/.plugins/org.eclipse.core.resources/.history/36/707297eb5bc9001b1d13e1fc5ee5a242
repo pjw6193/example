@@ -1,0 +1,14 @@
+package daythree;
+
+public class ReflectionAPI {
+
+	public static void main(String[] args) {
+		
+	}
+	
+}
+
+class Pickle {
+	String flavor;
+	public void eat() {}
+}

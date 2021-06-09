@@ -1,0 +1,16 @@
+package daythree;
+
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+
+public class FileIO {
+
+	// InputStream, OutputStream
+	public static void main(String[] args) throws FileNotFoundException {
+		// Open file, r/w, close file
+		PrintWriter writer = new PrintWriter("data.txt");
+		writer.println("Hello World");
+		writer.close();
+	}
+	
+}

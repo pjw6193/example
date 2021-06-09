@@ -1,0 +1,13 @@
+package daythree;
+
+import java.io.PrintWriter;
+
+public class FileIO {
+
+	// InputStream, OutputStream
+	public static void main(String[] args) {
+		PrintWriter writer = new PrintWriter("data.txt");
+		
+	}
+	
+}

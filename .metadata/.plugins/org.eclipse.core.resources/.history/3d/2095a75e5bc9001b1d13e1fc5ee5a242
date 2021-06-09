@@ -1,0 +1,6 @@
+# key-value pairs
+# read-only
+en.hello.world=Hello World
+es.hello.world=Hola Mundo
+
+database.url=www.hostname.com

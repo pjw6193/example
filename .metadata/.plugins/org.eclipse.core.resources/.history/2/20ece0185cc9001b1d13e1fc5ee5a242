@@ -1,0 +1,19 @@
+package daythree;
+
+import java.lang.reflect.Method;
+
+public class ReflectionAPI {
+
+	public static void main(String[] args) {
+		Method[] methods = Pickle.class.getDeclaredMethods();
+		for (Method method : methods) {
+			System.out.println(method.getName());
+		}
+	}
+	
+}
+
+class Pickle {
+	String flavor;
+	public void eat() {}
+}

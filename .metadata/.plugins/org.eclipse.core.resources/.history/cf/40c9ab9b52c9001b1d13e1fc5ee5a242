@@ -1,0 +1,7 @@
+package daythree;
+
+public class FileIO {
+
+	// InputStream, OutputStream
+	
+}
