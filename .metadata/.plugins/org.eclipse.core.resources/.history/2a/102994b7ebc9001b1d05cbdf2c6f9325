@@ -1,0 +1,28 @@
+package dayfour;
+
+public class StringClass {
+
+	public static void main(String[] args) {
+		// String pool: heap memory that stores Strings
+		String word = "primitive";
+		String word2 = "primitive"; // 1 object in String pool
+		// both point to the same String in the String Pool
+		// word = "xyz"; // new String, pointing word ref var to that String
+		//System.out.println(word2); // String class: FINAL byte[] value (immutable) cannot mutated/changed
+		
+		String sentence = new String("Hello World");
+		String sentence2 = new String("Hello World"); // 2 strings in the pool, bypasses the String pool
+		
+		// equality: == compares reference variables (memory location)
+		System.out.println(word == word2);
+		System.out.println(sentence == sentence2);
+		System.out.println(sentence.equals(sentence2)); // equality: char by char 
+	
+		System.out.println(4 == 5);
+		System.out.println(true != false);
+		
+	}
+	
+}
+
+

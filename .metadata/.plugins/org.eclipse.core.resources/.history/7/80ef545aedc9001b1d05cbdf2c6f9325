@@ -1,0 +1,9 @@
+package dayfour;
+
+/**
+ * Design Pattern: approach to solving a common problem.
+ * 
+ */
+public class FactoryDesignPattern {
+
+}

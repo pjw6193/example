@@ -1,0 +1,15 @@
+package dayfour;
+
+public class StringClass {
+
+	public static void main(String[] args) {
+		// String pool: heap memory that stores Strings
+		String word = "primitive";
+		String word2 = "primitive"; // 1 object in String pool
+		String sentence = new String("Hello World");
+		
+	}
+	
+}
+
+
