@@ -1,0 +1,17 @@
+package dayfour;
+
+public class MoreThreads {
+
+	public static void main(String[] args) {
+		// more concise - Java 8 
+	}
+	
+}
+
+// functional interface (Java 8 functional programming)
+// 		an interface with only 1 method
+// 		Lambda expression: -> notation to call a functional interface method
+interface Functional {
+	public void work(String param);
+}
+

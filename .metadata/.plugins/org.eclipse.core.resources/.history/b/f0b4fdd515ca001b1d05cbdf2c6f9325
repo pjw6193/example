@@ -1,0 +1,37 @@
+package dayfour;
+
+public class SingletonConcurrencyIssue {
+
+	public static void main(String[] args) {
+		// new Thread(() -> {}).start();
+		// thread one
+		new Thread(() -> {
+			System.out.println(Singleton.getInstance());
+		}).start();
+		// thread two
+		new Thread(() -> {
+			System.out.println(Singleton.getInstance());
+		}).start();
+	}
+	
+}
+
+/**
+ * 
+ */
+class Singleton {
+	private static Singleton INSTANCE = null;
+
+	private Singleton() {
+
+	}
+
+	public static Singleton getInstance() {
+		if (INSTANCE == null) {
+			INSTANCE = new Singleton();
+			return INSTANCE;
+		} else {
+			return INSTANCE;
+		}
+	}
+}
