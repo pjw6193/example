@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.util.concurrent.CopyOnWriteArrayList"/>
-    <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
     <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
     <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
     <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
@@ -27,4 +26,20 @@
     <fullyQualifiedTypeName name="java.io.FileInputStream"/>
     <fullyQualifiedTypeName name="java.io.InputStream"/>
     <fullyQualifiedTypeName name="daythree.PropertiesFile"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+    <fullyQualifiedTypeName name="dayfour.Weapon"/>
+    <fullyQualifiedTypeName name="dayfour.Sword"/>
+    <fullyQualifiedTypeName name="dayfour.Rifle"/>
+    <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
+    <fullyQualifiedTypeName name="dayfour.WeaponFactory"/>
+    <fullyQualifiedTypeName name="dayfour.Needler"/>
+    <fullyQualifiedTypeName name="java.util.GregorianCalendar"/>
+    <fullyQualifiedTypeName name="dayfour.ServiceClass"/>
+    <fullyQualifiedTypeName name="dayfour.LazilyLoadedSingleton"/>
+    <fullyQualifiedTypeName name="dayfour.EagerLoadedSingleton"/>
+    <fullyQualifiedTypeName name="java.lang.Runnable"/>
+    <fullyQualifiedTypeName name="dayfour.SuperThread"/>
+    <fullyQualifiedTypeName name="dayfour.WorkerThread"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="dayfour.Singleton"/>
 </qualifiedTypeNameHistroy>
