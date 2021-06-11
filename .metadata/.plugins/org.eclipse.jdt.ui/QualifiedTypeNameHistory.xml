@@ -26,7 +26,6 @@
     <fullyQualifiedTypeName name="java.io.FileInputStream"/>
     <fullyQualifiedTypeName name="java.io.InputStream"/>
     <fullyQualifiedTypeName name="daythree.PropertiesFile"/>
-    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
     <fullyQualifiedTypeName name="dayfour.Weapon"/>
     <fullyQualifiedTypeName name="dayfour.Sword"/>
     <fullyQualifiedTypeName name="dayfour.Rifle"/>
@@ -42,4 +41,14 @@
     <fullyQualifiedTypeName name="dayfour.WorkerThread"/>
     <fullyQualifiedTypeName name="java.lang.Thread"/>
     <fullyQualifiedTypeName name="dayfour.Singleton"/>
+    <fullyQualifiedTypeName name="org.junit.runner.RunWith"/>
+    <fullyQualifiedTypeName name="org.junit.Test"/>
+    <fullyQualifiedTypeName name="org.junit.Assert"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+    <fullyQualifiedTypeName name="com.skillstorm.maven.Calculator"/>
+    <fullyQualifiedTypeName name="org.junit.BeforeClass"/>
+    <fullyQualifiedTypeName name="org.junit.AfterClass"/>
+    <fullyQualifiedTypeName name="org.junit.Before"/>
+    <fullyQualifiedTypeName name="org.junit.After"/>
+    <fullyQualifiedTypeName name="java.lang.UnsupportedOperationException"/>
 </qualifiedTypeNameHistroy>
