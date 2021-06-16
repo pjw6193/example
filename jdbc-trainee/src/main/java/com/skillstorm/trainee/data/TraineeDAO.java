@@ -26,7 +26,7 @@ public interface TraineeDAO {
 
 	// decouple from SQL.. whoever calls doesn't use SQL
 	// they use model objects
-	public void save(Trainee trainee);
+	public Trainee save(Trainee trainee); // populate the ID and return the new object
 	
 	public List<Trainee> findAll();
 	
