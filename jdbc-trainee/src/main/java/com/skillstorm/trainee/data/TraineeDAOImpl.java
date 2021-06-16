@@ -16,7 +16,7 @@ public class TraineeDAOImpl implements TraineeDAO {
 
 	private static final String INSERT = "insert into trainee(trainee_name, trainee_major) values (?,?)";
 	private static final String FIND_ALL = "select id, trainee_name, trainee_major from trainee";
-	
+
 	// force the driver class into JVM, do that once
 	static {
 		try {
@@ -25,11 +25,11 @@ public class TraineeDAOImpl implements TraineeDAO {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public void save(Trainee trainee) {
 		// Connection pool (managed by your server)
 		// grab a connection from the pool. close it when you're done
-		try(Connection connection = DriverManager.getConnection(url, username, password)){
+		try (Connection connection = DriverManager.getConnection(url, username, password)) {
 			PreparedStatement stmt = connection.prepareStatement(INSERT);
 			stmt.setString(1, trainee.getName());
 			stmt.setString(2, trainee.getMajor());
@@ -40,38 +40,61 @@ public class TraineeDAOImpl implements TraineeDAO {
 	}
 
 	public List<Trainee> findAll() {
-		List<Trainee> trainees = new LinkedList<>(); 
-		try(Connection connection = DriverManager.getConnection(url, username, password)){
-			// load the rows into the list
-			Statement stmt = connection.createStatement(); // no parameter in SQL
-			// returns ResultSet - represents the rows from the database
+		List<Trainee> trainees = new LinkedList<>();
+		try (Connection connection = DriverManager.getConnection(url, username, password)) {
+			Statement stmt = connection.createStatement();
 			ResultSet resultSet = stmt.executeQuery(FIND_ALL);
-			// results in SQL point to an empty row (row 0) - loop thru the results
-			while(resultSet.next()) { // 1st time called will move to row 1
-				// start processing each row
-				// convert the data into Trainee objects (object-relational mapping - Hibernate/JPA)
-				// id, name, major
-				Trainee object = new Trainee(resultSet.getInt("id"), 
-									resultSet.getString("trainee_name"), 
-									resultSet.getString("trainee_major"));
+			while (resultSet.next()) {
+				Trainee object = new Trainee(resultSet.getInt("id"), resultSet.getString("trainee_name"),
+						resultSet.getString("trainee_major"));
 				trainees.add(object);
 			}
-			
-		}catch (SQLException e) {
+
+		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 		return trainees;
 	}
 
 	public Trainee findById(int id) {
-		throw new UnsupportedOperationException("Still working on it");
+		final String FIND_BY_ID = "select id, trainee_name, trainee_major from trainee where id = ?";
+		Trainee trainee = null;
+		try (Connection connection = DriverManager.getConnection(url, username, password)) {
+			PreparedStatement stmt = connection.prepareStatement(FIND_BY_ID);
+			stmt.setInt(1, id);
+			ResultSet rs = stmt.executeQuery();
+			rs.next(); // one result
+			int result_id = rs.getInt("id");
+			String result_name = rs.getString("trainee_name");
+			String result_major = rs.getString("trainee_major");
+			trainee = new Trainee(result_id, result_name, result_major);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return trainee;
 	}
 
+	// assume their ID is already populated in trainee object
+	@Override
 	public void update(Trainee trainee) {
-		throw new UnsupportedOperationException("Still working on it");
+		String sql = "update trainee set trainee_name = ?, trainee_major = ? where id = ?";
+		try(Connection connection = DriverManager.getConnection(url, username, password)){
+			PreparedStatement stmt = connection.prepareStatement(sql);
+			// parameter binding
+			stmt.setString(1, trainee.getName());
+			stmt.setString(2, trainee.getMajor());
+			stmt.setInt(3, trainee.getId());
+			stmt.executeUpdate();
+		}catch(SQLException e) {
+			e.printStackTrace();
+		}
 	}
 
 	public void delete(int id) {
+		throw new UnsupportedOperationException("Still working on it");
+	}
+
+	public List<Trainee> findByMajor(String major) {
 		throw new UnsupportedOperationException("Still working on it");
 	}
 

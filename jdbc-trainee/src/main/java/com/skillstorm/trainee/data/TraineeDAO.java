@@ -32,6 +32,8 @@ public interface TraineeDAO {
 	
 	public Trainee findById(int id);
 	
+	public List<Trainee> findByMajor(String major);
+	
 	public void update(Trainee trainee);
 	
 	public void delete(int id);
