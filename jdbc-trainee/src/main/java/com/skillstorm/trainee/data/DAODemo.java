@@ -10,4 +10,5 @@ public class DAODemo {
 		dao.save(record);
 		System.out.println("Complete");
 	}
+	
 }
