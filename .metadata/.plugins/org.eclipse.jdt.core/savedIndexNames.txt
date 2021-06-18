@@ -23,8 +23,6 @@ INDEX VERSION 1.131+C:\Skillstorm\in-class-examples\.metadata\.plugins\org.eclip
 3416338475.index
 307898623.index
 206889338.index
-465990643.index
-1888499710.index
 2815013388.index
 2642649259.index
 908566163.index

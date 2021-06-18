@@ -7,6 +7,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.skillstorm.services.TraineeService;
+
 /**
  * Java EE (Enterprise Edition)
  * J2EE (Java 1.8) 

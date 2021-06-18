@@ -43,6 +43,9 @@ public class ProductServlet extends HttpServlet {
 		database.put(3, new Product(3, "<script>window.alert('hackerz');</script>",
 				"<script>window.alert('hackerz!!!');</script>", 5.99, new Category(2, "Baked Goods", true)));
 
+		Product prod = new Product().new Builder().id(4).name("Milk").price(4.99).categoryName("Dairy").build();
+		database.put(4, prod);
+		
 		// store the data in request // product_list is c:forEach items
 		req.setAttribute("product_list", database.values());
 

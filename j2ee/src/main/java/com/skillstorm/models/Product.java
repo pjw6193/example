@@ -1,5 +1,12 @@
 package com.skillstorm.models;
 
+/**
+ * 10-15 tables, 30-50 columns (75% optional)
+ * 
+ * Builder design pattern: complex object initialization, but many features are
+ * optional
+ * 
+ */
 public class Product {
 
 	private int id;
@@ -7,6 +14,42 @@ public class Product {
 	private String description;
 	private double price;
 	private Category category;
+
+	public class Builder {
+		Product object = new Product();
+		Category category = new Category();
+		
+		public Builder id(int id) {
+			object.setId(id);
+			return this;
+		}
+		
+		public Builder name(String name) {
+			object.setName(name);
+			return this;
+		}
+		
+		public Builder description(String description) {
+			object.setDescription(description);
+			return this;
+		}
+		
+		public Builder price(double price) {
+			object.setPrice(price);
+			return this;
+		}
+		
+		public Builder categoryName(String name) {
+			category.setName(name);
+			return this;
+		}
+		
+		public Product build() {
+			object.setCategory(category);
+			return object;
+		}
+
+	}
 
 	public Product() {
 		super();
