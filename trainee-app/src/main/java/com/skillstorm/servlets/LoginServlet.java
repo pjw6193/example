@@ -8,7 +8,25 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class LoginServlet
+ * Java EE (Enterprise Edition)
+ * J2EE (Java 1.8) 
+ * EJB, JPA 
+ * 
+ * HttpServlet class
+ * Cookie/jsessionid
+ * request.getParameter
+ * input name=param_name
+ * forward/redirect
+ * request / session attributes
+ * web.xml (deployment descriptor) tells tomcat about your project
+ * WAR web application archive
+ * form, method action
+ * HTTP
+ * scriptlet
+ * 
+ * server-side rendering 
+ * client-side rendering (render the HTML page)
+ * 
  */
 @WebServlet(urlPatterns = "/login")
 public class LoginServlet extends HttpServlet {

@@ -4,4 +4,15 @@
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
   </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>ProductsPage</servlet-name>
+  	<jsp-file>/WEB-INF/pages/products.jsp</jsp-file>
+  	<init-param>
+  		<param-name>dan</param-name>
+  		<param-value>hello</param-value>
+  	</init-param>
+  	<load-on-startup>2</load-on-startup>
+  </servlet>
+  
 </web-app>
