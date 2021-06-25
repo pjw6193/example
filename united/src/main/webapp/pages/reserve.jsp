@@ -8,6 +8,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+<form method="get">
+	<input type="text" name="pick-up" >
+	<input type="text" name="drop-off" >
+	<input type="submit">
+</form>
 </body>
 </html>
